@@ -53,7 +53,7 @@ public class Principal {
 		resultadoDiv3 = lista1[3] / lista2[3];
 		resultadoDiv4 = lista1[4] / lista2[4];
 
-		return "Resultado de las divisiones es " + resultadoDiv + ", " + resultadoDiv1 + ", " + resultadoDiv2 + ", "+resultadoDiv3 + ", "+ resultadoDiv4;
+		return "Resultados de las divisiones: " + resultadoDiv + ", " + resultadoDiv1 + ", " + resultadoDiv2 + ", "+resultadoDiv3 + ", "+ resultadoDiv4;
 	}
 
 }
