@@ -20,9 +20,9 @@ public class Principal {
 
 		for(int j = 0; j < listaNumero.length; j++) {
 			if(listaNumero[j] % 2 == 0) {
-				System.out.println(listaNumero[j] + " es par");
+				System.out.println(listaNumero[j] + " par");
 			} else {
-				System.out.println(listaNumero[j] + " es impar");
+				System.out.println(listaNumero[j] + " impar");
 			}
 		}
 	}
