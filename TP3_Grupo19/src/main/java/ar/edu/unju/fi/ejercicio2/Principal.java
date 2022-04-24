@@ -19,7 +19,9 @@ public class Principal {
 			for (int i = 0; i <= num; i++) {
 				System.out.println("Tabla de multiplicar del: " + num);
 				for (int j = 0; j <= guardarNums.length;j++ ) {
+					
 					System.out.println(i + " * " + j + " = " + i * j);
+					
 				}
 				
 			}
