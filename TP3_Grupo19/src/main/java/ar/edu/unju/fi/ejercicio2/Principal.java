@@ -1,6 +1,6 @@
 package ar.edu.unju.fi.ejercicio2;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Principal {
