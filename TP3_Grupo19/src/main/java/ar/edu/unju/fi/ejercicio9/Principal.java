@@ -61,9 +61,9 @@ public class Principal {
 					System.out.println();
 					break;
 				case 3:
+					System.out.println();
 					double precioSumar ;
-					
-					System.out.println("Incrementar precios de los productos: ");
+					System.out.println("Incrementar precios: ");
 					precioSumar = teclado.nextInt();
 					for(int i = 0; i < listaProductos.size();i++) {
 						double resultadoPreciototal = 0;
