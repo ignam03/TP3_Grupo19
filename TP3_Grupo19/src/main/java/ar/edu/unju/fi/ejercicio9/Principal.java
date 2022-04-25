@@ -26,10 +26,37 @@ public class Principal {
 				op = teclado.nextInt();
 				switch (op) {
 				case 1:
-
+					
+					Producto producto = new Producto();
+					try {
+						
+						System.out.println("Ingrese codigo del producto: ");
+						Scanner teclado2 = new Scanner(System.in);
+						producto.setCodigo(teclado2.nextInt());
+						System.out.println();
+						System.out.println("Ingrese descripcion del producto: ");
+						producto.setDescripcion(teclado2.nextLine());
+						System.out.println();
+						System.out.println("Ingrese precio del producto: ");
+						producto.setPrecio(teclado2.nextDouble());
+						System.out.println();
+						System.out.println("Ingrese marca del producto: ");
+						producto.setMarca(teclado2.nextLine());
+						System.out.println();
+						
+					} catch (Exception e) {
+						System.out.println("Datos incorrectos");
+					}
+					listaProductos.add(producto);
+					System.out.println();
 					break;
 				case 2:
-
+					for(int i = 0; i < listaProductos.size();i++) {
+						System.out.println("Codigo: " + listaProductos.get(i).getCodigo());
+						System.out.println("Descripcion: " + listaProductos.get(i).getDescripcion());
+						System.out.println("Precio: " + listaProductos.get(i).getPrecio());
+						System.out.println("Marca: " + listaProductos.get(i).getMarca());
+					}
 					break;
 				case 3:
 
