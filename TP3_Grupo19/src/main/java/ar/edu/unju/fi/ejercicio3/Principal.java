@@ -15,8 +15,8 @@ public class Principal {
 		Scanner teclado = new Scanner(System.in);
 		alumno1.setNombre(teclado.nextLine());
 		System.out.println("Ingrese apellido del alumno: ");
+		alumno1.setApellido(teclado.nextLine());
 		try {
-			alumno1.setApellido(teclado.nextLine());
 			System.out.println("Ingrese libreta universitaria: ");
 			alumno1.setLU(teclado.nextInt());
 
