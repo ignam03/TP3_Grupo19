@@ -58,16 +58,32 @@ public class Principal {
 						System.out.println("Codigo: " + listaProductos.get(i).getCodigo());
 						System.out.println("Precio: " + listaProductos.get(i).getPrecio());
 					}
+					System.out.println();
 					break;
 				case 3:
-
+					double precioSumar ;
+					
+					System.out.println("Incrementar precios de los productos: ");
+					precioSumar = teclado.nextInt();
+					for(int i = 0; i < listaProductos.size();i++) {
+						double resultadoPreciototal = 0;
+						resultadoPreciototal = listaProductos.get(i).getPrecio() + precioSumar;
+						System.out.println(resultadoPreciototal);
+					}
 					break;
 				case 4:
-
+					for(int i = 0; i < listaProductos.size();i++) {
+						double montoTotal = 0;
+						montoTotal = montoTotal + listaProductos.get(i).getPrecio();
+						System.out.println(montoTotal);
+					}
+					System.out.println();
 					break;
+					
 				case 5:
 					System.out.println("Fin ");
 					salir = true;
+					System.out.println();
 					break;
 				default:
 					break;
