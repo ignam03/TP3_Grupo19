@@ -9,6 +9,16 @@ public class Producto {
 	public Producto() {
 		
 	}
+	
+
+	public Producto(int codigo, String descripcion, double precio, String marca) {
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.marca = marca;
+	}
+
+
 
 	public int getCodigo() {
 		return codigo;
