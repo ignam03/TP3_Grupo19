@@ -29,19 +29,20 @@ public class Principal {
 					
 					Producto producto = new Producto();
 					try {
-						
-						System.out.println("Ingrese codigo del producto: ");
-						Scanner teclado2 = new Scanner(System.in);
-						producto.setCodigo(teclado2.nextInt());
-						System.out.println();
+
 						System.out.println("Ingrese descripcion del producto: ");
-						producto.setDescripcion(teclado2.nextLine());
-						System.out.println();
-						System.out.println("Ingrese precio del producto: ");
-						producto.setPrecio(teclado2.nextDouble());
+						Scanner teclado2 = new Scanner(System.in);
+						String desc = teclado2.nextLine();
+						producto.setDescripcion(desc);
 						System.out.println();
 						System.out.println("Ingrese marca del producto: ");
 						producto.setMarca(teclado2.nextLine());
+						System.out.println();
+						System.out.println("Ingrese codigo del producto: ");
+						producto.setCodigo(teclado2.nextInt());
+						System.out.println();
+						System.out.println("Ingrese precio del producto: ");
+						producto.setPrecio(teclado2.nextDouble());
 						System.out.println();
 						
 					} catch (Exception e) {
@@ -52,10 +53,10 @@ public class Principal {
 					break;
 				case 2:
 					for(int i = 0; i < listaProductos.size();i++) {
-						System.out.println("Codigo: " + listaProductos.get(i).getCodigo());
 						System.out.println("Descripcion: " + listaProductos.get(i).getDescripcion());
-						System.out.println("Precio: " + listaProductos.get(i).getPrecio());
 						System.out.println("Marca: " + listaProductos.get(i).getMarca());
+						System.out.println("Codigo: " + listaProductos.get(i).getCodigo());
+						System.out.println("Precio: " + listaProductos.get(i).getPrecio());
 					}
 					break;
 				case 3:
